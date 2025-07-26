@@ -9,10 +9,15 @@ function agregarElementos(){
     if(input.value != ''){
         nombres.push(input.value)
 
-        let resultado = ''
-        for( let i = 0; i < nombres.length; i++){
-            resultado += '<spam>' + nombres[i] + '</spam>'
-        }
-        contenido.innerHTML = resultado
+        let span = document.createElement("span")
+        let content = document.createTextNode(input.value)
+
+        span.appendChild(content)
+        contenido.appendChild(span)
     }
+}
+
+function resetElementos(){
+    elementos = []
+    contenido.innerHTML = ""
 }
