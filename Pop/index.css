@@ -15,30 +15,24 @@ body {
 }
 
 main{
+    align-items: center;
     background-color: white;
     border: none;
     border-radius: 10px;
 }
 
-.contenido {
+textarea{
     background-color: rgb(177, 174, 174);
     min-height: 200px;
-    max-width: 400px;
+    width: 400px;
     margin: 10px;
     border-radius: 10px;
-    padding: 8px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 5px;
+    padding: 8px 8px; 
+    resize: none;
 }
 
-span{
-    padding: 10px 10px;
-    background-color: blanchedalmond;
-    border-radius: 10px;
-    animation: aparecespan 1s;
-}
+
+
 
 @keyframes aparecespan {
     0% {
@@ -70,9 +64,33 @@ div.botones{
     flex-grow: 1;
     border-radius: 10px;
     border: none;
+    font-weight:bolder;
+    transition: all 0.5s ease;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    
+}
+
+.reset button{
+    flex-grow: 1;
+    border-radius: 10px;
+    border: none;
+    font-weight:bolder;
+    transition: all 0.5s ease;
+}
+
+.reset button:hover{
+     background-color: transparent;
+     box-shadow: 0 0 20px 10px gold;
+     transform: scale(1.1);
 }
 
 
 .botones button:hover{
-    background-color: grey;
+    background-color: transparent;
+    box-shadow: 0 0 20px 10px gold;
+    transform: scale(1.1);
 }
