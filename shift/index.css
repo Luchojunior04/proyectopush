@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(78, 78, 78);
+    
+}
+
+main{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+main h1{
+    margin-bottom: 10px;  
+    color: rgb(187, 165, 43);  
+}
+
+p{
+    justify-content:flex-start;
+    font-size:medium ;
+    font-weight: 549;
+    margin-bottom: 10px;
+}
+
+div.botones{
+    display: flex;
+    height: 30px;
+    padding: 10px;
+}
+
+.botones button{
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: large;
+    color: rgb(187, 165, 43);
+}
+
+div.Reset{
+    display: flex;
+    height: 30px;
+    padding: 10px;
+}
+
+.Reset button{
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    font-size: large;
+    color: rgb(187, 165, 43);
+
+ }
+    
+
+div.contenido{
+    display: flex;   
+    min-height: 200px;
+    max-width: 700px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+span{
+    padding: 8px;
+
+}
+
+
+.Reset button:hover{
+    background-color:transparent;
+    box-shadow: 0 0 30px gold;
+}
+    
+.botones button:hover{
+    background-color:transparent;
+    box-shadow: 0 0 30px gold;
+}
