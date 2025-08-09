@@ -33,3 +33,11 @@ if( pregunta == "5") {
 
     let resultado = suma(2, 2);
     console.log(resultado)
+
+    //funcion de flechas
+    
+    bocina: () => {
+
+    }
+    
+    function miFuncion(){}
