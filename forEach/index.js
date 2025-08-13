@@ -2,23 +2,35 @@
 const lista = ['aire', 'acondicionado', 'guanabana', 'mandarina', 'computador']
 
 const contenido = document.getElementById('contenido')
-const resetBtn = document.getElementById('resetBtn')
 const forEachBtn = document.getElementById('forEachBtn')
+const resetBtn = document.getElementById('resetBtn')
 
 function actualizarHTML() {
     let resultHTML = ''
     lista.forEach((value, index) => {
         //resultHTML += '<span id=\'forEach' + index + '\'>' + value + '</span>';
-        resultHTML += `<span id= 'forEach'${index}'>${value}</span>`
+        resultHTML += `<span id="forEach${index}">${value}</span>`
 
     })
     contenido.innerHTML = resultHTML
 }
 
+
+
+
 function miFuncionforEach(){
     console.log(lista);
-    lista.forEach(() => {});
-    actualizarHTML();
+    lista.forEach((value, index) => {
+        const elemento = document.getElementById(`forEach${index}`)
+
+        setTimeout(() => {
+        elemento.classList.add("selected")
+        }, 2000 * index)
+
+        setTimeout(() => {
+            elemento.classList.remove("selected")
+        }, 2000 * (index + 1))
+    });
 }
 
 
@@ -31,8 +43,8 @@ function miFuncionReset(){
 
 
 actualizarHTML();
-resetBtn.addEventListener('click', miFuncionReset)
 forEachBtn.addEventListener('click', miFuncionforEach)
+resetBtn.addEventListener('click', miFuncionReset)
 
 
 

@@ -31,6 +31,15 @@ main{
     resize: none;
 }
 
+span{
+    margin: 10px;
+    background-color: gold;
+}
+
+.selected{
+    background-color: transparent;
+}
+
 
 
 
